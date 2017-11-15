@@ -15,7 +15,6 @@ function runme() {
     console.log(array.length);
     console.log(array.reverse());
 
-    //var car = {owner:"johan", bil1{ [name: "Volvo", color: "svart", year: 2013], bil2:{name: "SAAB", color: "vit"}}};
     var person = {
         "owner": "johan", 
         "age": 57, 
@@ -44,13 +43,10 @@ function runme() {
         var sum = a + b;
         console.log(sum);
         return sum;
-    }
-
-
-
-}
+    };
+};
 
 function clicked(){
     document.getElementById("demo").innerHTML = "Clicked";
-    console.log("clicked")
+    console.log("clicked");
 };
