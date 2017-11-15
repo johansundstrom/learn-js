@@ -71,18 +71,18 @@ console.log(array.length);
 
 ## Räknare, Loopar
 ```Javascript
-for (
-    i = 0; i < 10; i++){
+for ( i = 0; i < 10; i++ ){
         console.log(i);
-    };
+};
 ```
-
+Eller...
+```Javascript
 do {
     console.log(i);
     i++;
 }
 while (i < 5);
-
+```
 
 ### Objekt
 Objekt är en variabel som innehåller variabler. 
@@ -126,7 +126,3 @@ let text = '{"owner": "johan", "age": 57, "cars": [{"type": "Volvo", "color": "S
 var obj = JSON.parse(text); 
 console.log(obj.cars[1].color);
 ```
-
-#### Ett objekt kan bestå av 
-
-
