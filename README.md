@@ -4,10 +4,10 @@ Lite basic bara
 * Block av kod kallas function.
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
 * Man anropas funktionen med dess namn
-```myFunction(23, 34);```
+```myFunction();```
 * Man tillför indata inom funktionens parentes
 ```myFunction(12, 34);```
-* Inom funtionen finns ett return-uttryck som skickar ut data
+* Inom funktionen finns ett return-uttryck som skickar ut data
 ```javascript
 function myFunction(a, b) {
     let sum = a + b;
