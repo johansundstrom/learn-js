@@ -1,6 +1,26 @@
 # learnprogramming
 Lite basic bara
 
+* Block av kod kallas function.
+* Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
+* Man anropas funktionen med dess namn
+```myFunction(23, 34);```
+* Man tillför indata inom funktionens parentes
+```myFunction(12, 34);```
+* Inom funtionen finns ett return-uttryck som skickar ut data
+```javascript
+function myFunction(a, b) {
+    let sum = a + b;
+    console.log(sum);
+    return sum;
+}
+```
+* Allt inom { och } är funktionens innehåll
+* Funktionen skapas genom inledande ```function``` därefter funktionens namn
+* En funktion behöver inte kunna ta emot indata
+* En funktion behöver inte kunna sända data
+
+
 ## Variabler
 Skapa minneutrymme och referera till det med ett namn 
 ```var``` eller ```let```? ECMAScript 6 (senaste), nearest function block and let is scoped to the nearest enclosing block
@@ -41,10 +61,10 @@ console.log(array.sort()); //Sorterad
 ```
 Fallande
 ```javascript
-console.log(array.reverse(); //Sorterad
+console.log(array.reverse(); //Sorterad fallande
 ```
 
-Antal element
+Antal element i array
 ```javascript
 console.log(array.length);
 ```
@@ -65,7 +85,7 @@ while (i < 5);
 
 
 ### Objekt
-Objekt är variabler som innehåller variabler.
+Objekt är en variabel som innehåller variabler. 
 
 ### Objekt (kan bestå av properties och methods)
 En bil kan heta Volvo - en property (tänk vara), car.name = 'Volvo';
@@ -73,11 +93,11 @@ en bil kan starta - en method (tänk göra), car.start();
 
 Exempel med endast properties (namn: värde)
 ```javascript
-var car = {name: "Volvo", color: "black", year: 2013};
-console.log(car.name);
+var car = {type: "Volvo", color: "black", year: 2013};
+console.log(car.type);
 ```
 
-Annat exempel 
+Annat exempel - objekt med array
 ```javascript
 var person = {
     "owner": "johan", 
