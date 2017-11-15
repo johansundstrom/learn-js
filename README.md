@@ -26,7 +26,7 @@ function myFunction(a, b) {
 ## Variabler
 Skapa minneutrymme och referera till det med ett namn 
 ```var``` eller ```let```? ECMAScript 6 (senaste), nearest function block and let is scoped to the nearest enclosing block
-let a = 'johan'; // eller let a = "johan";
+var a = 'johan'; // eller let a = "johan";
 
 ### Testa numeriska och strängvärden
 ```javascript
