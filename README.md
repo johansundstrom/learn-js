@@ -86,7 +86,7 @@ do {
 while (i < 5);
 ```
 
-### Objekt
+## Objekt
 Objekt är en variabel som innehåller variabler. 
 
 ### Objekt (kan bestå av properties och methods)
