@@ -1,4 +1,4 @@
-# learnprogramming
+# Kort om programmering
 Lite basic bara
 
 * Block av kod kallas function.
