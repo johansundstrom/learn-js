@@ -102,12 +102,12 @@ console.log(car.type);
 Annat exempel - objekt med array
 ```javascript
 var person = {
-    "owner": "johan", 
-    "age": 57, 
-    "cars": [
-        {type: "Volvo", color: "Svart", year: 1998}, 
-        {"type": "Corvette", color: "röd"}, 
-        {"type": "BMW"}
+    owner: "johan", 
+    age: 57, 
+    cars: [
+        {type: "Volvo", color: "Svart", year: 1998}, 
+        {type: "Corvette", color: "röd"}, 
+        {type: "BMW"}
     ]
 };
 ```
