@@ -2,10 +2,12 @@
 Lite basic bara
 
 * Block av kod kallas function.
+* Funktion skapas enligt
+```funktion myFunction();```
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
-* Man anropas funktionen med dess namn
+* Funktionen anropas med dess namn
 ```myFunction();```
-* Man tillför indata inom funktionens parentes
+* Indata tillförs inom funktionens parentes
 ```myFunction(12, 34);```
 * Inom funktionen finns ett return-uttryck som skickar ut data
 ```javascript
