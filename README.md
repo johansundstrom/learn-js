@@ -21,9 +21,9 @@ function myFunction(a, b) {
 * Funktionen skapas genom inledande ```function``` därefter funktionens namn
 * En funktion behöver inte kunna ta emot indata
 * En funktion behöver inte kunna sända data
-* Nya funktioner kan finnas inom en funktion
-* variabler inom en funktion är isolerade från yttervärlden
-* variabler som ska nås av alla funktioner deklareras därför utanför funktionerna
+* Funktioner kan finnas inom en funktion
+* Variabler som skapas inom en funktion är isolerade från yttervärlden
+* Variabler som ska nås av alla funktioner deklareras därför utanför funktionerna
 
 
 ## Variabler
