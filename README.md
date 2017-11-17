@@ -3,7 +3,7 @@ Lite basic bara
 
 * Block av kod kallas function.
 * Funktion skapas enligt
-```funktion myFunction();```
+```function myFunction();```
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
 * Funktionen anropas med dess namn
 ```myFunction();```
