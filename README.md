@@ -1,6 +1,7 @@
 # Kort om programmering
 Lite basic bara
 
+## Funktioner
 * Block av kod kallas function.
 * Funktion skapas enligt
 ```function myFunction();```
@@ -17,6 +18,18 @@ function myFunction(a, b) {
     return sum;
 }
 ```
+## Anonyma Funktioner
+* Funktion som inte har funktionsnamn
+* Används ofta en gång
+```JavaScript
+var yta = function(b, h){
+    return b * h;
+}
+```
+
+## Fat Arrow funktion
+
+
 * Allt inom { och } är funktionens innehåll
 * Funktionen skapas genom inledande ```function``` därefter funktionens namn
 * En funktion behöver inte kunna ta emot indata
