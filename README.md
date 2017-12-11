@@ -44,7 +44,7 @@ Skapa minneutrymme och referera till det med ett namn
 ```var``` eller ```let```? ECMAScript 6 (senaste), nearest function block and let is scoped to the nearest enclosing block
 var a = 'johan'; // eller let a = "johan";
 
-### Testa boolseska-, numeriska- och strängvärden
+### Testa booleska-, numeriska- och strängvärden
 ```javascript
 let x = Boolean(0);
 let y = Boolean(1);
