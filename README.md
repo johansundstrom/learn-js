@@ -3,6 +3,13 @@ Lite basic bara
 
 ## Funktioner
 * Block av kod kallas function.
+* Allt inom { och } är funktionens innehåll
+* Funktionen skapas genom inledande ```function``` därefter funktionens namn
+* En funktion behöver inte kunna ta emot indata
+* En funktion behöver inte kunna sända data
+* Funktioner kan finnas inom en funktion
+* Variabler som skapas inom en funktion är isolerade från yttervärlden
+* Variabler som ska nås av alla funktioner deklareras därför utanför funktionerna
 * Funktion skapas enligt
 ```function myFunction();```
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
@@ -30,13 +37,6 @@ var yta = function(b, h){
 ## Fat Arrow funktion
 
 
-* Allt inom { och } är funktionens innehåll
-* Funktionen skapas genom inledande ```function``` därefter funktionens namn
-* En funktion behöver inte kunna ta emot indata
-* En funktion behöver inte kunna sända data
-* Funktioner kan finnas inom en funktion
-* Variabler som skapas inom en funktion är isolerade från yttervärlden
-* Variabler som ska nås av alla funktioner deklareras därför utanför funktionerna
 
 
 ## Variabler
