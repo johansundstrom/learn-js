@@ -2,24 +2,24 @@
 Lite basic bara
 
 ## Funktioner
-* Block av kod kallas function.
+* Block av kod kallas function
 * Allt inom { och } är funktionens innehåll
 * Funktionen skapas genom inledande ```function``` därefter funktionens namn
 * En funktion behöver inte kunna ta emot indata
 * En funktion behöver inte kunna sända data
-* Funktioner kan finnas inom en funktion
+* Nya funktioner kan finnas inom en funktion
 * Variabler som skapas inom en funktion är isolerade från yttervärlden
-* Variabler som ska nås av alla funktioner deklareras därför utanför funktionerna
+* Variabler som ska nås innifrån funktioner deklareras utanför funktionerna
 * Funktion skapas enligt
-```function myFunction();```
+```function minFunktion();```
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
 * Funktionen anropas med dess namn
-```myFunction();```
+```minFunktion();```
 * Indata tillförs inom funktionens parentes
-```myFunction(12, 34);```
+```minFunktion(12, 34);```
 * Inom funktionen finns ett return-uttryck som skickar ut data
 ```javascript
-function myFunction(a, b) {
+function minFunktion(a, b) {
     let sum = a + b;
     console.log(sum);
     return sum;
