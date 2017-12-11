@@ -19,7 +19,7 @@ function myFunction(a, b) {
 }
 ```
 ## Anonyma Funktioner
-* Funktion som inte har funktionsnamn
+* Funktion som inte behöver funktionsnamn
 * Används ofta en gång
 ```JavaScript
 var yta = function(b, h){
