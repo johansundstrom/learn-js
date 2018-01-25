@@ -26,8 +26,10 @@ function minFunktion(a, b) {
 }
 ```
 ## Anonyma Funktioner
+
 * Funktion som inte behöver funktionsnamn
 * Används ofta en gång
+
 ```JavaScript
 var yta = function(b, h){
     return b * h;
