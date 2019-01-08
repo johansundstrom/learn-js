@@ -2,22 +2,37 @@
 Lite basic bara
 
 ## Funktioner
+### Allmänt
 * Block av kod kallas function
 * Allt inom { och } är funktionens innehåll
 * Funktionen skapas genom inledande ```function``` därefter funktionens namn
 * En funktion behöver inte kunna ta emot indata
-* En funktion behöver inte kunna sända data
+* En funktion behöver inte kunna lämns ut data
 * Nya funktioner kan finnas inom en funktion
 * Variabler som skapas inom en funktion är isolerade från yttervärlden
 * Variabler som ska nås innifrån funktioner deklareras utanför funktionerna
 * Funktion skapas enligt
 ```function minFunktion();```
+### Indata
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
-* Funktionens resultat returneras med ```return```
-* Exempel på en returnering ```return myRersult```
-* Funktionen anropas med dess namn ```minFunktion();```
 * Indata tillförs inom funktionens parentes ```minFunktion(12, 34);```
-* Inom funktionen finns ett return-uttryck som skickar ut data ```javascript
+### Bearbetning
+* Inom ```{``` och ```}``` skrivs funktionens kod
+* Funktion som konverterar Fahrenheit till Celcius
+```javascript
+function FtoC(celcius){
+    fahrenheit = celcius * 9/5 +32
+    return fahrenheit
+}
+```
+### Utdata
+* Inom funktionen finns oftast ett return-uttryck som skickar ut data
+* Funktionens resultat returneras med ```return```
+* Exempel på en returnering ```return myResult```
+### Anrop
+* Funktionen anropas med dess namn ```minFunktion();``` eller ```minFunktion(12, 'text')```
+### Exempel
+```javascript
 function minFunktion(a, b) {
     let sum = a + b;
     console.log(sum);
