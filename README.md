@@ -25,7 +25,7 @@ function test(){
 ### let eller var?
 * Nedanstående kod är EC6
 
-```javascript```
+```javascript
 let parameter = 'Johan';
 // utanför block
 
@@ -41,7 +41,6 @@ function test(){
 // parameter = 'Johan'
 ```
 * let är "scoped to the nearest enclosing block"
-
 
 ## Funktioner
 ### Allmänt
