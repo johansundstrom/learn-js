@@ -1,6 +1,48 @@
 # Kort om programmering
 Lite basic bara
 
+## Variabler
+* Skapa minneutrymme och referera till det med ett namn
+* I de flesta programspråk brukar man tala om scope, alltså hur långt variablen når
+* De variabler som skapas i en funktion når inte utanför denna
+* Nedanstående kod använder variabeln ```parameter``` två gånger utan krock
+* Scoping rules avgör detta
+```javascript```
+var parameter = 'Johan';
+// utanför block
+
+function test(){
+    // inom block
+    var parameter = 1;
+    if (true) {
+        // inom nytt block
+        var parameter = 2; // samma variabel som innan if
+    }
+    // parameter = 2
+} 
+// parameter = 'Johan'
+```
+### let eller var?
+* Nedanstående kod är EC6
+
+```javascript```
+let parameter = 'Johan';
+// utanför block
+
+function test(){
+    // inom block
+    let parameter = 1;
+    if (true) {
+        // inom nytt block
+        let parameter = 2; // INTE samma variabel som innan if
+    }
+    // parameter = 2
+} 
+// parameter = 'Johan'
+```
+* let är "scoped to the nearest enclosing block"
+
+
 ## Funktioner
 ### Allmänt
 * Inom programmering är kod oftast skiftlägeskänsliga 
@@ -64,17 +106,10 @@ kvadraten(4);  // 8
 * ES6
 ```javascript
 var kvadraten = sidan => * 2
+
+kvadraten(4);  // 8
 ```
-
-## Variabler
-
-Skapa minneutrymme och referera till det med ett namn 
-
-```var``` eller ```let```? ECMAScript 6 (senaste), nearest function block and let is scoped to the nearest enclosing block
-
-```javascript
-var a = 'johan'; // eller let a = "johan";
-```
+* Samma kod, samma resultat
 
 ### Testa booleska-, numeriska- och strängvärden
 ```javascript
