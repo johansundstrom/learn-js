@@ -7,7 +7,7 @@ Lite basic bara
 * De variabler som skapas i en funktion når inte utanför denna
 * Nedanstående kod använder variabeln ```parameter``` två gånger utan krock
 * Scoping rules avgör detta
-```javascript```
+```javascript
 var parameter = 'Johan';
 // utanför block
 
