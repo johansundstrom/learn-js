@@ -3,6 +3,7 @@ Lite basic bara
 
 ## Funktioner
 ### Allmänt
+* Inom programmering är kod oftast skiftlägeskänsliga 
 * Block av kod kallas function
 * Allt inom { och } är funktionens innehåll
 * Funktionen skapas genom inledande ```function``` därefter funktionens namn
@@ -33,17 +34,16 @@ function FtoC(celcius){
 * Funktionen anropas med dess namn ```minFunktion();``` eller ```minFunktion(12, 'text')```
 ### Exempel
 ```javascript
-function minFunktion(a, b) {
+function summera(a, b) {
     let sum = a + b;
-    console.log(sum);
     return sum;
 }
+
+console.log(summera(34, 45));
 ```
 ## Anonyma Funktioner
-
 * Funktion som inte behöver funktionsnamn
 * Används ofta en gång
-
 ```JavaScript
 var yta = function(b, h){
     return b * h;
@@ -51,9 +51,20 @@ var yta = function(b, h){
 ```
 
 ## Fat Arrow funktion
+* Javascript har utvecklats, ECMAScript 6 (ES6) är senaste versionen
+* Med ES6 kan parenterser och måsvingar rationaliseras bort
+* ES5
+```javascript
+function kvadraten(sidan) {
+  return sidan * 2
+}
 
-
-
+kvadraten(4);  // 8
+```
+* ES6
+```javascript
+var kvadraten = sidan => * 2
+```
 
 ## Variabler
 
