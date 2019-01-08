@@ -14,7 +14,7 @@ Lite basic bara
 ```function minFunktion();```
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
 * Funktionens resultat returneras med ```return```
-* Exempel på en returnering ```return myRersult
+* Exempel på en returnering ```return myRersult```
 * Funktionen anropas med dess namn ```minFunktion();```
 * Indata tillförs inom funktionens parentes ```minFunktion(12, 34);```
 * Inom funktionen finns ett return-uttryck som skickar ut data ```javascript
