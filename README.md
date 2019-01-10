@@ -7,7 +7,7 @@ Lite basic bara
 
 ## Variabler
 * Skapa minneutrymmen och referera till det sker med ett namn
-* * Definiera variabel med ```var``` eller ```let```
+* Definiera variabel med ```var``` eller ```let```
 * I de flesta programspråk brukar man tala om *scope*, alltså hur långt variablen når
 * De variabler som skapas i en funktion når inte utanför denna
 * *Scope Rules* avgör detta
@@ -23,7 +23,6 @@ function test(){
         var parameter = 2; // samma variabel som innan if
         // parameter är nu = 2
     }
-
 } 
 ```
 
@@ -44,7 +43,7 @@ function test(){
 * ```let``` är *scoped to the nearest enclosing block*
 
 ## Skriva ut till användaren
-* funktionen ```console.log()``` skriver ut
+* Funktionen ```console.log()``` skriver ut
 * Exempel ```console.log('Test');```
 
 
@@ -168,7 +167,7 @@ console.log(array.length);
 ## Räknare, Loopar
 ```Javascript
 for ( i = 0; i < 10; i++ ){
-        console.log(i);
+    console.log(i);
 };
 ```
 Eller...
@@ -197,7 +196,7 @@ Annat exempel - objekt med array
 ```javascript
 var person = {
     owner: "johan", 
-    age: 57, 
+    age: 59, 
     cars: [
         {type: "Volvo", color: "Svart", year: 1998}, 
         {type: "Corvette", color: "röd"}, 
@@ -224,7 +223,7 @@ Object.keys(person.cars).forEach(function(key) {
 ```
 Gör om (parse) text till objekt
 ```javascript
-let text = '{"owner": "johan", "age": 57, "cars": [{"type": "Volvo", "color": "Svart", "year": 1998}, {"type": "Corvette", "color": "röd"}, {"type": "BMW"}]}';
-var obj = JSON.parse(text); 
+let text = '{"owner": "johan", "age": 59, "cars": [{"type": "Volvo", "color": "Svart", "year": 1998}, {"type": "Corvette", "color": "röd"}, {"type": "BMW"}]}';
+let obj = JSON.parse(text); 
 console.log(obj.cars[1].color);
 ```
