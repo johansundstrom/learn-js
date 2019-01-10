@@ -1,48 +1,55 @@
 # Kort om programmering
 Lite basic bara
 
-## Variabler
-* Skapa minneutrymme och referera till det med ett namn
-* I de flesta programspråk brukar man tala om scope, alltså hur långt variablen når
-* De variabler som skapas i en funktion når inte utanför denna
-* Nedanstående kod använder variabeln ```parameter``` två gånger utan krock
-* Scoping rules avgör detta
-```javascript
-var parameter = 'Johan';
-// utanför block
+## Programmering
+* Handlar om att behandla data
+* Data placeras i arbetsminnet via variabler
 
+## Variabler
+* Skapa minneutrymmen och referera till det sker med ett namn
+* * Definiera variabel med ```var``` eller ```let```
+* I de flesta programspråk brukar man tala om *scope*, alltså hur långt variablen når
+* De variabler som skapas i en funktion når inte utanför denna
+* *Scope Rules* avgör detta
+
+### let eller var?
+* Nedanstående kod är ES5
+```javascript
 function test(){
     // inom block
     var parameter = 1;
     if (true) {
         // inom nytt block
         var parameter = 2; // samma variabel som innan if
+        // parameter är nu = 2
     }
-    // parameter = 2
+
 } 
-// parameter = 'Johan'
 ```
-### let eller var?
+
 * Nedanstående kod är EC6
 
 ```javascript
-let parameter = 'Johan';
-// utanför block
-
 function test(){
     // inom block
     let parameter = 1;
     if (true) {
         // inom nytt block
         let parameter = 2; // INTE samma variabel som innan if
+        // parameter = 2 i detta block
     }
-    // parameter = 2
+    // parameter = 1 här
 } 
-// parameter = 'Johan'
 ```
-* let är "scoped to the nearest enclosing block"
+* ```let``` är *scoped to the nearest enclosing block*
+
+## Skriva ut till användaren
+* funktionen ```console.log()``` skriver ut
+* Exempel ```console.log('Test');```
+
 
 ## Funktioner
+
 ### Allmänt
 * Inom programmering är kod oftast skiftlägeskänsliga 
 * Block av kod kallas function
@@ -55,9 +62,11 @@ function test(){
 * Variabler som ska nås innifrån funktioner deklareras utanför funktionerna
 * Funktion skapas enligt
 ```function minFunktion();```
+
 ### Indata
 * Funktionen kan få indata, bearbeta dessa och mata ut ett resultat
 * Indata tillförs inom funktionens parentes ```minFunktion(12, 34);```
+
 ### Bearbetning
 * Inom ```{``` och ```}``` skrivs funktionens kod
 * Funktion som konverterar Fahrenheit till Celcius
@@ -67,12 +76,15 @@ function FtoC(celcius){
     return fahrenheit
 }
 ```
+
 ### Utdata
 * Inom funktionen finns oftast ett return-uttryck som skickar ut data
 * Funktionens resultat returneras med ```return```
 * Exempel på en returnering ```return myResult```
-### Anrop
+
+### Funktionsanrop
 * Funktionen anropas med dess namn ```minFunktion();``` eller ```minFunktion(12, 'text')```
+
 ### Exempel
 ```javascript
 function summera(a, b) {
@@ -84,7 +96,7 @@ console.log(summera(34, 45));
 ```
 ## Anonyma Funktioner
 * Funktion som inte behöver funktionsnamn
-* Används ofta en gång
+* Används oftast bara en gång
 ```JavaScript
 var yta = function(b, h){
     return b * h;
@@ -93,7 +105,7 @@ var yta = function(b, h){
 
 ## Fat Arrow funktion
 * Javascript har utvecklats, ECMAScript 6 (ES6) är senaste versionen
-* Med ES6 kan parenterser och måsvingar rationaliseras bort
+* Med ES6 kan parenteser och måsvingar rationaliseras bort
 * ES5
 ```javascript
 function kvadraten(sidan) {
@@ -116,6 +128,7 @@ let x = Boolean(0);
 let y = Boolean(1);
 console.log(x, y);
 ```
+
 ```javascript
 let a = 'johan';
 let b = 123;
@@ -125,9 +138,8 @@ console.log(a + b + c); //Blir fel
 Lösning
 ```javascript
 let d = b + c;
-let e = d.toString();
-console.log(a + d.toString());
-let d = b + c;
+let e = d.toString() + a;
+console.log(d);
 ```
 
 ### Array (serier av värden)
@@ -172,7 +184,7 @@ while (i < 5);
 Objekt är en variabel som innehåller variabler. 
 
 ### Objekt (kan bestå av properties och methods)
-En bil kan heta Volvo - en property (tänk vara), car.name = 'Volvo';
+En bil kan vara en Volvo - en property (tänk vara), car.name = 'Volvo';
 en bil kan starta - en method (tänk göra), car.start();
 
 Exempel med endast properties (namn: värde)
@@ -203,6 +215,12 @@ for (
 i = 0; i < array.length; i++){
     console.log(person.cars[i].type);
 };
+```
+Eller...
+```javascript
+Object.keys(person.cars).forEach(function(key) {
+    console.log(person.cars[key]); 
+});
 ```
 Gör om (parse) text till objekt
 ```javascript
