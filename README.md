@@ -209,9 +209,10 @@ while (i < 5);
 ## Objekt
 Objekt är en variabel som innehåller variabler. 
 
-### Objekt (kan bestå av properties och methods)
-En bil kan vara en Volvo - en property (tänk vara), car.name = 'Volvo';
-en bil kan starta - en method (tänk göra), car.start();
+### Objekt (kan bestå av *properties* och *methods*)
+* En bil kan vara en Volvo - en property (tänk vara), car.name = 'Volvo';
+* En bil kan starta - en method (tänk göra), car.start();
+* Ett objekts innehåll definieras inom ```{``` och ```}```
 
 Exempel med endast properties (namn: värde)
 ```javascript
