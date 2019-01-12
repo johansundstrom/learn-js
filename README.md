@@ -1,6 +1,11 @@
 # Kort om programmering
 Lite basic bara...
 
+## Kompilering
+* Programmeringsspråk är av männiksor påhittade språk
+* Processorer förstår inte programmeringsspråk
+* Kod från programmeringsspråk måste översättas till objektkod (typ ettor och nollor)
+
 ## Programmering
 * Programmering handlar om att behandla data
 * Data placeras i arbetsminnet via variabler
@@ -122,6 +127,20 @@ var kvadraten = sidan => * 2
 kvadraten(4);  // 8
 ```
 * Samma kod, samma resultat
+
+## Module export/require
+* Funktioner kan läggas separat i andra filer
+* Exporterande fil (functions/function.js) behöver ha följande format...
+```javascript
+export function hej() {
+  return 'Hej';
+}
+```
+* Importerande fil (start.js) behöver följande...
+```javascript
+const myModule = require('functions/function.js');
+let val = myModule.hello();     // val = "Hej"
+```
 
 ### Testa booleska-, numeriska- och strängvärden
 ```javascript
