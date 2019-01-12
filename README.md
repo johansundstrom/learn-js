@@ -1,15 +1,17 @@
 # Kort om programmering
-Lite basic bara
+Lite basic bara...
 
 ## Programmering
-* Handlar om att behandla data
+* Programmering handlar om att behandla data
 * Data placeras i arbetsminnet via variabler
 
 ## Variabler
-* Skapa minneutrymmen och referera till det sker med ett namn
+* Att reservera minneutrymme och refererar till det med ett namn
 * Definiera variabel med ```var``` eller ```let```
-* I de flesta programspråk brukar man tala om *scope*, alltså hur långt variablen når
-* De variabler som skapas i en funktion når inte utanför denna
+* Två variabler med samma namn kan inte förekomma
+* I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig
+* Variabler som skapas i en funktion når inte utanför denna
+* Variabler på övre nivå kan nå nedåt
 * *Scope Rules* avgör detta
 
 ### let eller var?
