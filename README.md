@@ -1,4 +1,4 @@
-# Kort om programmering
+# Kort om programmering med JavaScript
 Lite basic bara...
 
 ## Kompilering
