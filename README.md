@@ -10,7 +10,7 @@ Lite basic bara...
 * *javacript engine* finns också för filsystem med populära NODE/NPM
 
 ## NODE/NPM
-* <a href="nodejs.org">nodejs.org</a>
+* <a href="http://nodejs.org">nodejs.org</a>
 
 ## Programmering
 * Programmering handlar om att behandla data
