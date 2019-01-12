@@ -5,6 +5,12 @@ Lite basic bara...
 * Programmeringsspråk är av männiksor påhittade språk
 * Processorer förstår inte programmeringsspråk
 * Kod från programmeringsspråk måste översättas till objektkod (typ ettor och nollor)
+* För att kompilera javascript behövs en *javascript engine*
+* *javacript engine* finns i alla webbläsare och startar ofta genom HTML för att arbeta nära med webbläsarens DOM
+* *javacript engine* finns också för filsystem med populära NODE/NPM
+
+## NODE/NPM
+* <a href="nodejs.org">nodejs.org</a>
 
 ## Programmering
 * Programmering handlar om att behandla data
