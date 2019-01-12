@@ -2,7 +2,7 @@
 Lite basic bara...
 
 ## Kompilering
-* Programmeringsspråk är av männiksor påhittade språk
+* Programmeringsspråk är påhittade av människsor
 * Processorer förstår inte programmeringsspråk
 * Kod från programmeringsspråk måste översättas till objektkod (typ ettor och nollor)
 * För att kompilera javascript behövs en *javascript engine*
@@ -19,7 +19,7 @@ Lite basic bara...
 ## Variabler
 * Att reservera minneutrymme och refererar till det med ett namn
 * Definiera variabel med ```var``` eller ```let```
-* Två variabler med samma namn kan inte förekomma
+* Två variabler som når varandra och med samma namn kan inte förekomma
 * I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig
 * Variabler som skapas i en funktion når inte utanför denna
 * Variabler på övre nivå kan nå nedåt
@@ -94,7 +94,7 @@ function FtoC(celcius){
 * Funktionens resultat returneras med ```return```
 * Exempel på en returnering ```return myResult```
 
-### Funktionsanrop
+### Anropa funktion
 * Funktionen anropas med dess namn ```minFunktion();``` eller ```minFunktion(12, 'text')```
 
 ### Exempel
