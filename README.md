@@ -55,6 +55,10 @@ function test(){
 ```
 * ```let``` är *scoped to the nearest enclosing block*
 
+## Konstanter
+* Allokering av arbetsminne som inte tillås i programmet kallas konstanter
+* Exempel, ```const moms = 1.25;
+
 ## Skriva ut till användaren
 * Funktionen ```console.log()``` skriver ut
 * Exempel ```console.log('Test');```
