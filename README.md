@@ -116,11 +116,11 @@ console.log(summera(34, 45));
 * Funktion som inte behöver funktionsnamn
 * Används oftast bara en gång
 ```JavaScript
-var yta = function(b, h){
+var area = function(b, h){
     return b * h;
 }
 
-var golvYta = yta(12, 5);
+var golvYta = area(12, 5);
 ```
 
 ## Fat Arrow funktion
@@ -233,61 +233,68 @@ Objekt är en variabel som innehåller variabler och array
 ### Skapa Objekt (två sätt)
 
 ## Skapa variabel som obekt
+* Följande sätt kallas *Object Literal* då den både skapar och definierar objektet
 ```javascript
 var car = {
     brand: "Volvo",
     type: "S70",
-    color: "Black",
+    color: "Svart",
     year: 2002
 }
 ```
 Annat sätt med samma resultat
 ```javascript
 var car = new Object();
+// Objektet är skapat, nu kan den populeras
 car.brand = "Volvo";
 car.type = "S70";
-car.color = Black;
+car.color = Svart;
 car.year = "2002";
 ```
 
-Exempel med endast properties (namn: värde)
+### Skriv ut objektets *property*
 ```javascript
-var car = {type: "Volvo", color: "black", year: 2013};
 console.log(car.type);
 ```
 
 Annat exempel - objekt med array
 ```javascript
-var person = {
-    owner: "johan", 
+var owner = {
+    name: "Johan", 
     age: 59, 
     cars: [
-        {type: "Volvo", color: "Svart", year: 1998}, 
-        {type: "Corvette", color: "röd"}, 
-        {type: "BMW"}
+        {brand: "Volvo", color: "svart", year: 2002}, 
+        {brand: "Chevrolet", type = "Corvette", color: "röd"}, 
+        {brand: "BMW"}
     ]
 };
 ```
-Plocka ut RöD Corvette
+Plocka ut "röd Corvette"
 ```javascript
-console.log(person.cars[1].color + " " + person.cars[1].type);
+console.log(owner.cars[1].color + " " + person.cars[1].type);
 ```
 Lista alla bilar
 ```javascript
 for (
 i = 0; i < array.length; i++){
-    console.log(person.cars[i].type);
+    console.log(owner.cars[i].brand);
 };
 ```
 Eller...
 ```javascript
-Object.keys(person.cars).forEach(function(key) {
-    console.log(person.cars[key]); 
+Object.keys(owner.cars).forEach(function(key) {
+    console.log(owner.cars[key]); 
 });
 ```
-Gör om (parse) text till objekt
+
+### Gör om (parse) text till objekt
 ```javascript
-let text = '{"owner": "johan", "age": 59, "cars": [{"type": "Volvo", "color": "Svart", "year": 1998}, {"type": "Corvette", "color": "röd"}, {"type": "BMW"}]}';
+let text = '{"name": "Johan", "age": 59, "cars": [{"brand": "Volvo", "color": "Svart", "year": 1998}, {"brand": "Corvette", "color": "röd"}, {"brand": "BMW"}]}';
 let obj = JSON.parse(text); 
 console.log(obj.cars[1].color);
+```
+
+### Gör om (stringify) objekt till text
+```javascript
+
 ```
