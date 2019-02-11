@@ -17,11 +17,11 @@ Lite basic bara...
 * Data placeras i arbetsminnet via variabler
 
 ## Variabler
-* Att reservera minneutrymme och refererar till det med ett namn
-* Definiera variabel med ```var``` eller ```let```
-* Två variabler som når varandra och med samma namn kan inte förekomma
-* I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig
-* Variabler som skapas i en funktion når inte utanför denna
+* Sätt att reservera minneutrymme och refererar till det med ett namn
+* JavaScript definier variabel med ```var``` eller ```let```
+* Två variabler som når varandra kan inte ha samma namn
+* I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig i koden
+* Variabler som skapas i en funktion nås bara i funktionen
 * Variabler på övre nivå kan nå nedåt
 * *Scope Rules* avgör detta
 
