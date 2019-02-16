@@ -6,7 +6,7 @@ Lite basic bara...
 * Processorer förstår inte programmeringsspråk
 * Kod från programmeringsspråk måste översättas till objektkod (typ ettor och nollor)
 * För att kompilera javascript behövs en *javascript engine*
-* *javacript engine* finns i alla webbläsare och startar ofta genom HTML för att arbeta nära med webbläsarens DOM
+* *javacript engine* finns i alla webbläsare och startar ofta genom en HTML-fil för att arbeta nära med webbläsarens DOM
 * *javacript engine* finns också för filsystem med populära NODE/NPM
 
 ## NODE/NPM
