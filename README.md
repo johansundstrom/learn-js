@@ -17,11 +17,11 @@ Lite basic bara...
 * Data placeras i arbetsminnet via variabler
 
 ## Variabler
-* Att reservera minneutrymme och refererar till det med ett namn
-* Definiera variabel med ```var``` eller ```let```
-* Två variabler som når varandra och med samma namn kan inte förekomma
-* I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig
-* Variabler som skapas i en funktion når inte utanför denna
+* Sätt att reservera minneutrymme och refererar till det med ett namn
+* JavaScript definier variabel med ```var``` eller ```let```
+* Två variabler som når varandra kan inte ha samma namn
+* I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig i koden
+* Variabler som skapas i en funktion nås bara i funktionen
 * Variabler på övre nivå kan nå nedåt
 * *Scope Rules* avgör detta
 
@@ -54,6 +54,11 @@ function test(){
 } 
 ```
 * ```let``` är *scoped to the nearest enclosing block*
+
+## Konstanter
+* Allokering av arbetsminne som programmet inte tillåts att ändras kallas konstanter
+* Exempel, ```const veckoDagar = 7;```
+
 
 ## Skriva ut till användaren
 * Funktionen ```console.log()``` skriver ut
@@ -106,13 +111,16 @@ function summera(a, b) {
 
 console.log(summera(34, 45));
 ```
+
 ## Anonyma Funktioner
 * Funktion som inte behöver funktionsnamn
 * Används oftast bara en gång
 ```JavaScript
-var yta = function(b, h){
+var area = function(b, h){
     return b * h;
 }
+
+var golvYta = area(12, 5);
 ```
 
 ## Fat Arrow funktion
@@ -144,15 +152,17 @@ export function hej() {
 ```
 * Importerande fil (start.js) behöver följande...
 ```javascript
-const myModule = require('functions/function.js');
-let val = myModule.hello();     // val = "Hej"
+const minModul = require('functions/function.js');
+let val = minModul.hej();     // val = "Hej"
 ```
 
 ### Testa booleska-, numeriska- och strängvärden
 ```javascript
 let x = Boolean(0);
 let y = Boolean(1);
+
 console.log(x, y);
+console.log(!x);
 ```
 
 ```javascript
@@ -165,30 +175,33 @@ Lösning
 ```javascript
 let d = b + c;
 let e = d.toString() + a;
-console.log(d);
+console.log(e);
 ```
 
-### Array (serier av värden)
+## Array (serier av värden)
 ```javascript
-let arr = [23, 54, 21, 8, 12, 42];
-console.log(arr);
+let minArray = [23, 54, 21, 8, 12, 42];
+console.log(minArray);
 ```
-Peka ut 2:a (med start från index 0
+
+Peka ut 2:a (med start från index 0)
 ```javascript
-console.log(array[1]);
+console.log(minArray[1]);   //skriver ut 54
 ```
+
 sorterad
 ```javascript
-console.log(array.sort()); //Sorterad
+console.log(minArray.sort()); //Sorterad
 ```
+
 Fallande
 ```javascript
-console.log(array.reverse(); //Sorterad fallande
+console.log(minArray.reverse(); //Sorterad fallande
 ```
 
 Antal element i array
 ```javascript
-console.log(array.length);
+console.log(minArray.length);
 ```
 
 ## Räknare, Loopar
@@ -197,61 +210,91 @@ for ( i = 0; i < 10; i++ ){
     console.log(i);
 };
 ```
+
 Eller...
 ```Javascript
 do {
     console.log(i);
     i++;
 }
-while (i < 5);
+while (i < 10);
 ```
 
 ## Objekt
-Objekt är en variabel som innehåller variabler. 
+Objekt är en variabel som innehåller variabler och array 
 
 ### Objekt (kan bestå av *properties* och *methods*)
-* En bil kan vara en Volvo - en property (tänk vara), car.name = 'Volvo';
-* En bil kan starta - en method (tänk göra), car.start();
+* *Property* utläses som "kan vara". En bil "kan vara" en Volvo ```car.name = 'Volvo';```
+* *Method* utläses som "kan göra". En bil "kan startas" ```car.start();```
+* Programmeringsmässigt skiljs *property* och *method* åt genom parentesen
+* Parenter innebär att man kan ta emot indata
 * Ett objekts innehåll definieras inom ```{``` och ```}```
 
-Exempel med endast properties (namn: värde)
+### Skapa Objekt (två sätt)
+
+## Skapa variabel som obekt
+* Följande sätt kallas *Object Literal* då den både skapar och definierar objektet
 ```javascript
-var car = {type: "Volvo", color: "black", year: 2013};
+var car = {
+    brand: "Volvo",
+    type: "S70",
+    color: "Svart",
+    year: 2002
+}
+```
+Annat sätt med samma resultat
+```javascript
+var car = new Object();
+// Objektet är skapat, nu kan den populeras
+car.brand = "Volvo";
+car.type = "S70";
+car.color = Svart;
+car.year = "2002";
+```
+
+### Skriv ut objektets *property*
+```javascript
 console.log(car.type);
 ```
 
 Annat exempel - objekt med array
 ```javascript
-var person = {
-    owner: "johan", 
+var owner = {
+    name: "Johan", 
     age: 59, 
     cars: [
-        {type: "Volvo", color: "Svart", year: 1998}, 
-        {type: "Corvette", color: "röd"}, 
-        {type: "BMW"}
+        {brand: "Volvo", color: "svart", year: 2002}, 
+        {brand: "Chevrolet", type = "Corvette", color: "röd"}, 
+        {brand: "BMW"}
     ]
 };
 ```
-Plocka ut RöD Corvette
+Plocka ut "röd Corvette"
 ```javascript
-console.log(person.cars[1].color + " " + person.cars[1].type);
+console.log(owner.cars[1].color + " " + person.cars[1].type);
 ```
 Lista alla bilar
 ```javascript
 for (
 i = 0; i < array.length; i++){
-    console.log(person.cars[i].type);
+    console.log(owner.cars[i].brand);
 };
 ```
 Eller...
 ```javascript
-Object.keys(person.cars).forEach(function(key) {
-    console.log(person.cars[key]); 
+Object.keys(owner.cars).forEach(function(key) {
+    console.log(owner.cars[key]); 
 });
 ```
-Gör om (parse) text till objekt
+
+### Gör om (parse) text till objekt
 ```javascript
-let text = '{"owner": "johan", "age": 59, "cars": [{"type": "Volvo", "color": "Svart", "year": 1998}, {"type": "Corvette", "color": "röd"}, {"type": "BMW"}]}';
+let text = '{"name": "Johan", "age": 59, "cars": [{"brand": "Volvo", "color": "Svart", "year": 1998}, {"brand": "Corvette", "color": "röd"}, {"brand": "BMW"}]}';
 let obj = JSON.parse(text); 
 console.log(obj.cars[1].color);
+```
+
+### Gör om (stringify) objekt till text
+```javascript
+
 ```
