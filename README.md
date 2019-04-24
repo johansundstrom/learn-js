@@ -298,3 +298,15 @@ console.log(obj.cars[1].color);
 ```javascript
 
 ```
+
+## Manipulera HTML med JS
+```html
+<input type="number" min="0" max="100" id="valueA" oninput="calculateSum()">
+<input type="number" min="0" max="100" id="valueB" oninput="calculateSum()">
+<div id="sum"></div>
+```
+```javascript
+function calculateSum() {
+    
+}
+```
