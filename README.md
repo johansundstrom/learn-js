@@ -315,10 +315,10 @@ console.log(obj.cars[1].color);
 function calculateSum() {
     let a = document.getElementById("valueA").value;
     let b = document.getElementById("valueB").value;
-    
     let sum = parseFloat(a) + parseFloat(b);
+    
     if (!isNaN(sum)) {
-        document.getElementById("sum").innerHTML = sum.toString();
+        document.getElementById("sum").innerHTML = sum;
     }
 }
 ```
