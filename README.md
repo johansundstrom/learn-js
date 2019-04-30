@@ -34,8 +34,9 @@ function test(){
     if (true) {
         // inom nytt block
         var parameter = 2; // samma variabel som innan if
-        // parameter är nu = 2
+        // parameter = 2 här
     }
+    // parameter = 1 här
 } 
 ```
 
@@ -48,7 +49,7 @@ function test(){
     if (true) {
         // inom nytt block
         let parameter = 2; // INTE samma variabel som innan if
-        // parameter = 2 i detta block
+        // parameter = 2 här
     }
     // parameter = 1 här
 } 
