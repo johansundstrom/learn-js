@@ -291,13 +291,14 @@ Object.keys(owner.cars).forEach(function(key) {
 ### Gör om (parse) text till objekt
 ```javascript
 let text = '{"name": "Johan", "age": 59, "cars": [{"brand": "Volvo", "color": "Svart", "year": 1998}, {"brand": "Corvette", "color": "röd"}, {"brand": "BMW"}]}';
-let obj = JSON.parse(text); 
-console.log(obj.cars[1].color);
+let myObj = JSON.parse(text); 
+console.log(myObj.cars[1].color);
 ```
 
 ### Gör om (stringify) objekt till text
 ```javascript
-
+let myJSON = JSON.stringify(myObj);
+console.log(myJSON);
 ```
 
 ## Manipulera HTML med JS
