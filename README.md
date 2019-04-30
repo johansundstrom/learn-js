@@ -302,12 +302,18 @@ console.log(obj.cars[1].color);
 
 ## Manipulera HTML med JS
 ```html
-<input type="number" min="0" max="100" id="valueA" oninput="calculateSum()">
+<input type="number" min="0" max="100" id="valueA" oninput="calculateSum()"> +
 <input type="number" min="0" max="100" id="valueB" oninput="calculateSum()">
-<div id="sum"></div>
+= <span id="sum"></span>
 ```
 ```javascript
 function calculateSum() {
+    let a = document.getElementById("valueA").value;
+    let b = document.getElementById("valueB").value;
     
+    let sum = parseFloat(a) + parseFloat(b);
+    if (!isNaN(sum)) {
+        document.getElementById("sum").innerHTML = sum.toString();
+    }
 }
 ```
