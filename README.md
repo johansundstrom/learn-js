@@ -306,6 +306,11 @@ console.log(obj.cars[1].color);
 <input type="number" min="0" max="100" id="valueB" oninput="calculateSum()">
 = <span id="sum"></span>
 ```
+* Hämta value från #valueA ur DOM 
+* Hämta value från #valueB ur DOM
+* Dessa värden kommer som strängvariabler
+* Genom parseFloat castas sträng till numeriskt värde
+* Visa summan av dessa om det är ett numerisk värde
 ```javascript
 function calculateSum() {
     let a = document.getElementById("valueA").value;
