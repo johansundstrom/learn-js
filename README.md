@@ -17,7 +17,7 @@ Lite basic bara...
 * Data placeras i arbetsminnet via variabler
 
 ## Variabler
-* Sätt att reservera minneutrymme och refererar till det med ett namn
+* Sätt att reservera minneutrymme och referera till det med ett namn
 * JavaScript definier variabel med ```var``` eller ```let```
 * Två variabler som når varandra kan inte ha samma namn
 * I de flesta programspråk brukar man tala om *scope* - alltså var variablen är tillgänglig i koden
