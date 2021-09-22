@@ -40,7 +40,7 @@ function test(){
 } 
 ```
 
-* Nedanstående kod är EC6
+* Nedanstående kod är ES6
 
 ```javascript
 function test(){
