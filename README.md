@@ -143,6 +143,14 @@ kvadraten(4);  // 8
 ```
 * Samma kod, samma resultat
 
+## Callback
+
+* Callback eller Continuation-passing style: callbacks are continuation functions
+* En funktion som har en annan funktion som in-parameter är en callback function
+* Funktioner är objekt i JS
+* Funktioner utan namn kallas anonyma funktioner
+* * Promise kan ersätter callbacks
+
 ## Module export/require
 * Funktioner kan läggas separat i andra filer
 * Exporterande fil (functions/function.js) behöver ha följande format...
@@ -264,9 +272,9 @@ var owner = {
     name: "Johan", 
     age: 59, 
     cars: [
-        {brand: "Volvo", color: "svart", year: 2002}, 
-        {brand: "Chevrolet", type = "Corvette", color: "röd"}, 
-        {brand: "BMW"}
+        {brand: "Volvo", type: "S70", color: "svart", year: 1998}, 
+        {brand: "Chevrolet", type: "Corvette", color: "röd", year: 1998}, 
+        {brand: "BMW", type: "X5"}
     ]
 };
 ```
@@ -323,3 +331,10 @@ function calculateSum() {
     }
 }
 ```
+
+## Hitta element i DOM
+
+* ```document.getElementById('<id name>');```
+* ```document.getElementsByClassName('<class name>');```
+* ```document.querySelector('<selector name>');```
+
