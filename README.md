@@ -62,7 +62,7 @@ function test(){
 
 
 ## Skriva ut till användaren
-* Funktionen ```console.log()``` skriver ut
+* Funktionen ```console.log()``` skriver ut för debugging
 * Exempel ```console.log('Test');```
 
 
